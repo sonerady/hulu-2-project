@@ -1,0 +1,64 @@
+/*------------------Tab Header */
+
+/* NEDEN FLEXBOXU KULLANDIGINI README'YE YAZ */
+
+.header {
+  display: flex;
+  color: #fff;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.header::-webkit-scrollbar {
+  display: none;
+}
+
+.header > img {
+  object-fit: contain;
+  height: 80px;
+}
+
+/*Tab Header Icons */
+
+.header__icons {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.header__icon {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  width: 100px;
+  flex-direction: column;
+}
+
+.header__icon > .MuiSvgIcon-root {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+}
+
+.header__icon:hover > p {
+  display: inline-flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__icon > p {
+  letter-spacing: 1.4px;
+  font-size: medium;
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header__icon--active > p {
+  align-items: center;
+  justify-content: center;
+  display: inline-flex !important;
+}

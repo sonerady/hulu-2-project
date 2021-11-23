@@ -1,0 +1,45 @@
+.videoCard {
+  margin-top: 20px;
+  color: white;
+  width: 300px;
+  height: 400px;
+  padding-left: 30px;
+  line-height: 20px;
+  transition: transform 500ms;
+}
+
+.videoCard:hover {
+  transform: scale(1.09);
+}
+
+.videoCard > img {
+  height: 260px;
+  object-fit: cover;
+  width: 300px;
+  border-radius: 30px;
+}
+
+.videoCard > h1 {
+  font-size: 15px;
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+.videoCard > p {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+.videoCard:hover > .videoCard__stats {
+  display: inline !important;
+}
+
+.movieOverview {
+  font-size: 13px;
+  width: 300px;
+  height: 80px;
+  overflow: hidden;
+}
